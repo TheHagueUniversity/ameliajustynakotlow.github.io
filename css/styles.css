@@ -31,22 +31,24 @@ img {
   width: 300px;
 }
 a {
-  color: #A3CDE0;
-;
-}
-a:hover {
   text-decoration: none;
-  color: #9C7F94;
+  color: #312A32;
+  font-size: 20px
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: #99993A;
+  color: #312A32;
 }
 h1 {
   font-family: 'Quicksand', sans-serif;
-  color: #A3CDE0;
-  font-size: 30px;
+  color: #99939A;
+  font-size: 40px;
   line-height: 1.3;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-bottom: 1px;
-  text-align: center;
+  text-align: left;
+  left: 300px;
+  top: 30%;
 }
 /*
 
@@ -61,10 +63,11 @@ h2 {
   text-align: center;
 }
 
-#start {
+#title {
   color: #26222e;
   text-align: left;
-  margin-left: -5%;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 #box {
@@ -74,34 +77,46 @@ h2 {
   width: 45%;
   height: 100vh;
   top: 0;
-  left:25%;
+  right:0;
 }
 
-/*
-#box2{
-  position: absolute;
-  background-image: url("../images/chaos.png");
-  background-size: 250px 100px;
-  background-repeat: no-repeat;
-  width: 260px;
-  height: 100px;
-  top: 150px;
-  left: 40px;
+#box:hover{
+  opacity: 0.7;
+  transition: .5s ease;
 }
-*/
+
+#enter {
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  margin-left: 82%;
+  margin-top: 15%;
+}
+
+#portfolio{
+  position: absolute;
+  background-image: url("../images/portfolio.png");
+  background-size: 450px 211px;
+  background-repeat: no-repeat;
+  width: 450px;
+  height: 211px;
+  top: 70%;
+  left: 3.5%;
+}
 
 #down{
   font-size: 20px;
-  text-align: right;
-  margin-right: 5%;
-  margin-top: 30%;
+  color: black;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 0%;
 }
 
 #go{
   font-size: 15px;
   text-align: left;
-  margin-left: 5%;
-  margin-top: 30%;
+  left:10%;
+  top:200px;
 }
 
 
@@ -138,13 +153,41 @@ p{
   color: #3a3a3a;
 }
 
-/* Profile
+/* ABOUT
 ------------------------------------*/
 header {
   background-size: cover;
   color: #F7FFF7;
 }
 
+#titlelower{
+  color: #26222e;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 0%;
+}
+
+.sketch1 {
+  position: absolute;
+  background-image: url("../images/sketch1.png");
+  background-size: 340px 621px;
+  background-repeat: no-repeat;
+  width: 340px;
+  height: 621px;
+  top: 40%;
+  left: 3.5%;
+}
+
+.me {
+  position: absolute;
+  background-image: url("../images/me.jpg");
+  background-size: 640px 791px;
+  background-repeat: no-repeat;
+  width: 640px;
+  height: 791px;
+  top: 20%;
+  left: 68%;
+}
 
 /* Projects
 ------------------------------------*/
@@ -177,6 +220,29 @@ header {
 
 /* Work Experience
 ------------------------------------*/
+
+#timeline {
+  position: absolute;
+  background-image: url("../images/timeline.png");
+  background-size: 1300px 731px;
+  background-repeat: no-repeat;
+  width: 1920px;
+  height: 1080px;
+  top: 10%;
+  left: 0;
+}
+
+/*
+  position: absolute;
+  background-image: url("../images/chaos.png");
+  background-size: 250px 100px;
+  background-repeat: no-repeat;
+  width: 260px;
+  height: 100px;
+  top: 150px;
+  left: 40px;
+*/
+
 .work-experience {
   background: #9C7F94;
   color:#26222e;
@@ -189,12 +255,13 @@ nav {
 
 .link{
   padding: 10px;
+  position: center;
   /*background-color: #26222E; */
 
 }
 .link:hover {
-  text-decoration: none;
-  background-color: #F8E3E2;
+  text-decoration: underline;
+  background-color: #D2D4D8;
 } 
 
 /* Education
